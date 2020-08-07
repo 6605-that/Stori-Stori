@@ -1,3 +1,11 @@
 .explore-body {
   height: 100vh;
 }
+
+/* description*/
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

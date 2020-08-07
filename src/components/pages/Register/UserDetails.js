@@ -16,75 +16,77 @@ export class UserDetails extends Component {
     return (
       <div className="container-fluid wrapper">
         <Nav />
-        <div className=" row main-page">
-          <div className="col-sm image-wrapper">
-            <picture className="container">
-              <img className="img-responsive" src={signup1} alt="" />
+        <div className="container">
+          <div className=" row justify-content-md-center main-page">
+            <div className="col-sm image-wrapper">
+              <picture className="container">
+                <img className="img-fluid" src={signup1} alt="" />
+                {
+                  //sizes="(min-width: 50rem) 50vw
+                }
+              </picture>
+            </div>
+            <div className="col-sm form-wrapper">
+              <h1>Hi There</h1>
+              <p>Sign up to get started</p>
+              <a href="facebook.com">
+                <img src={facebook} alt="" />
+              </a>
+              <a href="google.com">
+                <img src={google} alt="" />
+              </a>
+              <a href="twitter.com">
+                <img src={twitter} alt="" />
+              </a>
+              <p>Or use your email to sign up</p>
               {
-                //sizes="(min-width: 50rem) 50vw
+                //form
               }
-            </picture>
-          </div>
-          <div className="col-sm form-wrapper">
-            <h1>Hi There</h1>
-            <p>Sign up to get started</p>
-            <a href="facebook.com">
-              <img src={facebook} alt="" />
-            </a>
-            <a href="google.com">
-              <img src={google} alt="" />
-            </a>
-            <a href="twitter.com">
-              <img src={twitter} alt="" />
-            </a>
-            <p>Or use your email to sign up</p>
-            {
-              //form
-            }
-            <form action="">
-              <div className="form-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Username"
-                  onChange={handleChange("userName")}
-                  defaultValue={values.userName}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Email"
-                  id="email"
-                  onChange={handleChange("email")}
-                  defaultValue={values.email}
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="password"
-                  className="form-control"
-                  placeholder="Password"
-                  id="pwd"
-                  onChange={handleChange("password")}
-                  defaultValue={values.password}
-                />
-              </div>
+              <form action="">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Username"
+                    onChange={handleChange("userName")}
+                    defaultValue={values.userName}
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Email"
+                    id="email"
+                    onChange={handleChange("email")}
+                    defaultValue={values.email}
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Password"
+                    id="pwd"
+                    onChange={handleChange("password")}
+                    defaultValue={values.password}
+                  />
+                </div>
 
-              <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={this.continue}
-              >
-                SIGN UP
-              </button>
-              <p>
-                By continuing you agree to our{" "}
-                <a href="terms.com">Terms and Conditions {""}</a>
-                and <a href="privacy.com">Privacy Policy</a>
-              </p>
-            </form>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  onClick={this.continue}
+                >
+                  SIGN UP
+                </button>
+                <p>
+                  By continuing you agree to our{" "}
+                  <a href="terms.com">Terms and Conditions {""}</a>
+                  and <a href="privacy.com">Privacy Policy</a>
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>

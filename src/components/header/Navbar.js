@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo/logoHome.svg";
 import "../stylesheets/Navbar.css";
 
 export class Navbar extends Component {
   render() {
     return (
       <header className="">
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav className="navbar sticy-top navbar-expand-sm navbar-light bg-white">
           <Link to="/">
-            <div className="navbar-brand">Stori Stori </div>
+            <img src={logo} alt="" className="navbar-brand" />
           </Link>
 
           <button
@@ -19,19 +20,25 @@ export class Navbar extends Component {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <form className="form-inline" action="/action_page.php">
-            <input
-              className="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button className="btn btn-success" type="submit">
-              Search
-            </button>
-          </form>
-
+          {
+            //<form className="form-inline" action="/action_page.php">
+            // <input
+            //   className="form-control mr-sm-2"
+            //  type="text"
+            //    placeholder="Search"
+            // />
+            // <button className="btn btn-success" type="submit">
+            //   Search
+            //</form></form>  </button>
+            // </form>
+          }
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <Link className="nav-link" to="/">
+                  Home
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/explore">
                   Explore
@@ -43,21 +50,25 @@ export class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/signup">
-                  Sign Up
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/login">
-                  Login
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/profile">
                   Profile
                 </Link>
               </li>
             </ul>
+            <div>
+              <ul className=" navbar-nav mr-auto">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/signup">
+                    SIGN UP
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">
+                    SIGN IN
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>

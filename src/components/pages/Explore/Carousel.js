@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import wild from "../../assets/images/Explore/wild.png";
 import papercraft from "../../assets/images/Explore/papercraft.png";
 
-export class Carousel extends Component {
+export class ExploreCarousel extends Component {
   render() {
     return (
       <div>
@@ -43,4 +43,4 @@ export class Carousel extends Component {
   }
 }
 
-export default Carousel;
+export default ExploreCarousel;

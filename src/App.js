@@ -7,6 +7,9 @@ import SignUp from "./components/pages/Register/SignUp";
 import Login from "./components/pages/Login";
 import Profile from "./components/pages/Profile";
 import Description from "./components/pages/BookDescription/Description";
+import State from "./components/pages/Write/State";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
 
 export class App extends Component {
   render() {
@@ -20,6 +23,9 @@ export class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/profile" component={Profile} />
           <Route path="/description" component={Description} />
+          <Route path="/write" component={State} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
         </div>
       </Router>
     );

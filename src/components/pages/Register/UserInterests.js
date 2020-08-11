@@ -16,7 +16,7 @@ export class UserInterests extends Component {
     return (
       <div className="container-fluid wrapper2">
         <Nav />
-        <div className="form-wrapper2 container ">
+        <div className="form-wrapper2 container mt-5 ">
           <div className="texts">
             <h1>
               Hi {values.userName}
@@ -32,6 +32,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -40,6 +41,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -48,6 +50,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -61,6 +64,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -69,6 +73,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -77,6 +82,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -89,6 +95,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -97,6 +104,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -105,6 +113,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -117,6 +126,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -125,6 +135,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -133,6 +144,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -145,6 +157,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -153,6 +166,7 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
@@ -161,12 +175,13 @@ export class UserInterests extends Component {
               type="submit"
               className="btn btn-outline-dark col-sm "
               onClick={handleChange("interests")}
+              id="space"
             >
               Fantasy
             </div>
           </div>
           <div className="continue">
-            <div className="btn " id="btn" onClick={this.continue}>
+            <div className="btn mg-auto" id="btn" onClick={this.continue}>
               Continue
             </div>
           </div>

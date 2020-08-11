@@ -16,27 +16,24 @@ export class UserDetails extends Component {
     return (
       <div className="container-fluid wrapper">
         <Nav />
-        <div className="container">
+        <div className="container mt-5">
           <div className=" row justify-content-md-center main-page">
             <div className="col-sm image-wrapper">
               <picture className="container">
                 <img className="img-fluid" src={signup1} alt="" />
-                {
-                  //sizes="(min-width: 50rem) 50vw
-                }
               </picture>
             </div>
             <div className="col-sm form-wrapper">
               <h1>Hi There</h1>
               <p>Sign up to get started</p>
               <a href="facebook.com">
-                <img src={facebook} alt="" />
+                <img src={facebook} alt="" id="space" />
               </a>
               <a href="google.com">
-                <img src={google} alt="" />
+                <img src={google} alt="" id="space" />
               </a>
               <a href="twitter.com">
-                <img src={twitter} alt="" />
+                <img src={twitter} alt="" id="space" />
               </a>
               <p>Or use your email to sign up</p>
               {

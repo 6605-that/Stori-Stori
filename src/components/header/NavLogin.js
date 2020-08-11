@@ -34,14 +34,14 @@ export class Navbar extends Component {
           }
           <div className="collapse navbar-collapse" id="collapsibleNavbar">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <Link className="nav-link" to="/">
-                  Home
+              <li className="nav-item">
+                <Link className="nav-link" to="/explore">
+                  Explore
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
+                <Link className="nav-link" to="/library">
+                  library
                 </Link>
               </li>
               <li className="nav-item">
@@ -53,13 +53,13 @@ export class Navbar extends Component {
             <div>
               <ul className=" navbar-nav mr-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/signup">
-                    SIGN UP
+                  <Link className="nav-link" to="/write">
+                    Write
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">
-                    SIGN IN
+                  <Link className="nav-link" to="/home">
+                    SIGN OUT
                   </Link>
                 </li>
               </ul>

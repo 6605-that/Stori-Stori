@@ -13,7 +13,7 @@ export class Home extends Component {
           <div className="img-box">
             <img src={home} alt="" className="img-fluid float-right " />
           </div>
-          <div className="text-box">
+          <div className="text-box mt-3">
             <div>
               <h1>African Stories</h1>
             </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Nav from "../Explore/Nav";
+import NavLogin from "../../header/NavLogin";
 import "../../stylesheets/Explore.css";
 import woman from "../../assets/images/Explore/woman.png";
 
@@ -8,7 +8,7 @@ export class Description extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <Nav />
+        <NavLogin />
         <div className="container">
           <div className="img-cover-bg  row">
             <div className="img-container  col-sm">

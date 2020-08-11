@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Navbar from "../header/Navbar";
+import NavLogin from "../header/NavLogin";
 
 export class Library extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <NavLogin />
         <h1>Library</h1>
       </div>
     );

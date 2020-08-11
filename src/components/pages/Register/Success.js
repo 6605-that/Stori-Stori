@@ -14,9 +14,9 @@ export class Success extends Component {
     return (
       <div className="container-fluid wrapper2">
         <Nav />
-        <div className="form-wrapper2 container">
+        <div className="form-wrapper2 container mt-5 text-center">
           <picture>
-            <img src={Signup2} alt="" />
+            <img src={Signup2} alt="" className="img-fluid" />
           </picture>
           <div className="success-message">
             <h1>Well Done!</h1>

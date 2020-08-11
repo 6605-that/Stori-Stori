@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Thumbnail from "./Thumbnail";
 //import ExploreCarousel from "./Carousel";
-import Navbar from "../../header/Navbar";
+import NavLogin from "../../header/NavLogin";
 import "../../stylesheets/Explore.css";
 import Background from "../../assets/images/Explore/background.svg";
 
@@ -13,7 +13,7 @@ export class Explore extends Component {
         style={{ backgroundImage: `url(${Background})` }}
         className="explore-body"
       >
-        <Navbar />
+        <NavLogin />
         {
           //<ExploreCarousel />
         }

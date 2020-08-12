@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import BookDetails from "./bookDetails";
 import Write from "./Write";
 import Review from "./Review";
 import Success from "./Success";
@@ -8,10 +9,13 @@ export class State extends Component {
     step: 1,
     bookCover: "",
     title: "",
-    chapter: "",
+    author: "",
+    description: "",
+    genre: "",
+    tags: [],
+    copyright: "",
     content: "",
-    date: "",
-    time: "",
+    viewers: "",
   };
   //Proceed to the next step
   nextStep = () => {
@@ -35,19 +39,50 @@ export class State extends Component {
   };
   render() {
     const { step } = this.state;
-    const { bookCover, title, chapter, content, date, time } = this.state;
-    const values = { bookCover, title, chapter, content, date, time };
+    const {
+      bookCover,
+      title,
+      chapter,
+      description,
+      genre,
+      tags,
+      copyright,
+      content,
+      author,
+      viewers,
+    } = this.state;
+    const values = {
+      bookCover,
+      title,
+      chapter,
+      description,
+      genre,
+      tags,
+      copyright,
+      content,
+      author,
+      viewers,
+    };
 
     switch (step) {
       case 1:
         return (
-          <Write
+          <BookDetails
             nextStep={this.nextStep}
             handleChange={this.handleChange}
             values={values}
           />
         );
       case 2:
+        return (
+          <Write
+            nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            handleChange={this.handleChange}
+            values={values}
+          />
+        );
+      case 3:
         return (
           <Review
             nextStep={this.nextStep}
@@ -56,7 +91,7 @@ export class State extends Component {
             values={values}
           />
         );
-      case 3:
+      case 4:
         return <Success nextStep={this.nextStep} />;
       //no default
     }

@@ -11,6 +11,9 @@ export class UserDetails extends Component {
     e.preventDefault();
     this.props.nextStep();
   };
+  handleSubmit = (e) => {
+    console.log(this.state);
+  };
   render() {
     const { values, handleChange } = this.props;
     return (
@@ -39,7 +42,7 @@ export class UserDetails extends Component {
               {
                 //form
               }
-              <form action="">
+              <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
                   <input
                     type="text"

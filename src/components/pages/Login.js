@@ -21,6 +21,7 @@ export class UserDetails extends Component {
     console.log(this.state);
   };
 
+
   render() {
     // const { values, handleChange } = this.props;
     return (
@@ -82,6 +83,7 @@ export class UserDetails extends Component {
           </div>
         </div>
       </div>
+
     );
   }
 }

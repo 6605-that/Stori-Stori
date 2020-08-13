@@ -1,6 +1,9 @@
 This project is buillt using JavaScript and react library.
 "# Stori-Stori" 
 
+Product Description :
+ A writing and reading platform with Original African based literature (only) of all genres, research and documentaries inclusive. This is aimed at positively representing the African literary brand, giving a platform to showcase writing skills and rich content that makes up the African story, give writers visibility and readers a to-go platform for all kinds of African literature.
+
 Repo Naming Structure
  type: subject e.g body, footer
 The title consists of the type of the message and subject. The type is contained within the title and can be one of these types:
